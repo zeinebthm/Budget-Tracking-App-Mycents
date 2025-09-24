@@ -1,0 +1,108 @@
+# ---------------------------------
+# Miscellaneous (System + Editor)
+# ---------------------------------
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.history
+.svn/
+migrate_working_dir/
+
+# ---------------------------------
+# Flutter & Dart
+# ---------------------------------
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+*.lock
+
+# Exclude generated Firebase config files (if needed)
+firebase.json
+firebase_options.dart
+
+# ---------------------------------
+# IDEs
+# ---------------------------------
+
+# Android Studio / IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# ---------------------------------
+# Platform-specific builds
+# ---------------------------------
+
+# Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/.gradle/
+android/.idea/
+android/local.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework/
+ios/Flutter/App.framework/
+ios/Flutter/engine/
+ios/Flutter/*.xcframework
+
+# macOS
+macos/Flutter/ephemeral/
+
+# Linux
+linux/flutter/ephemeral/
+
+# Windows
+windows/flutter/ephemeral/
+
+# Web
+web/manifest.json
+web/firebase-messaging-sw.js
+
+# ---------------------------------
+# Obfuscation / Symbolication
+# ---------------------------------
+app.*.symbols
+app.*.map.json
+
+# ---------------------------------
+# Large or binary assets to ignore
+# ---------------------------------
+*.ttf
+*.otf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.psd
+*.ico
+*.mp4
+*.mov
+*.avi
+*.zip
+*.exe
+
+# ---------------------------------
+# GitHub-specific
+# ---------------------------------
+*.pem
+*.key
+*.crt
+*.p12
