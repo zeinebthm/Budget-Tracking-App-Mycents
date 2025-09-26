@@ -50,7 +50,34 @@ class ApiService {
       return false;
     }
   }
+  Future<Map<String, dynamic>> register(String email, String password) async {
+    final url = Uri.parse('$_baseUrl/auth/register.php');
 
+    try {
+      final response = await http.post(
+        url,
+        headers: {'Content-Type': 'application/json'},
+        body: jsonEncode({
+          'email': email,
+          'password': password,
+        }),
+      );
+
+      final data = jsonDecode(response.body);
+
+      return {
+        'success': response.statusCode < 300,
+        'message': data['message'] ?? 'Ein unbekannter Fehler ist aufgetreten'
+      };
+    
+    } catch (e) {
+      print("Erreur réseau (register): $e");
+      return {
+        'success': false,
+        'message': 'Netzwerkfehler. Bitte versuchen Sie es später erneut.'
+      };
+    }
+  }  
 
 
 Future<Map<String, dynamic>?> getBudgets({required int year, required int month}) async {

@@ -34,7 +34,7 @@ class _LoginState extends State<Login> {
             const Spacer(),
 
             SecondaryButton(
-              title: "Créer un compte par E-Mail",
+              title: "Erstellen Sie ein Konto per E-Mail",
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => 
                 const SignUpView()),
@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
             const SizedBox(height: 15),
 
             PrimaryButton( 
-              title: "J'ai déjà un compte (Se connecter)",
+              title: "Ich habe bereits ein Konto (Anmelden)",
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => 
                 const SignInView()),
