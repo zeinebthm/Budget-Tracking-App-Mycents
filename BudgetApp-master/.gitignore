@@ -23,11 +23,11 @@ migrate_working_dir/
 build/
 **/doc/api/
 **/ios/Flutter/.last_build_id
-*.lock
+pubspec.lock
 
 # Exclude generated Firebase config files (if needed)
-firebase.json
-firebase_options.dart
+# firebase.json
+# firebase_options.dart
 
 # ---------------------------------
 # IDEs
@@ -72,8 +72,8 @@ linux/flutter/ephemeral/
 windows/flutter/ephemeral/
 
 # Web
-web/manifest.json
-web/firebase-messaging-sw.js
+# web/manifest.json
+# web/firebase-messaging-sw.js
 
 # ---------------------------------
 # Obfuscation / Symbolication
@@ -82,27 +82,12 @@ app.*.symbols
 app.*.map.json
 
 # ---------------------------------
-# Large or binary assets to ignore
-# ---------------------------------
-*.ttf
-*.otf
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.psd
-*.ico
-*.mp4
-*.mov
-*.avi
-*.zip
-*.exe
-
-# ---------------------------------
 # GitHub-specific
 # ---------------------------------
 *.pem
 *.key
 *.crt
 *.p12
+
+# Fichiers temporaires de Windows à ignorer
+Unknown-*
